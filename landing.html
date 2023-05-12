@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyd Na</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="./landing.js"></script>
+
+    <link href="./landing.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="dummy-top"></div>
+    <div id="top" class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <u><b>Lloyd Na</b></u>
+            </div>
+            <div class="col-9">
+                <div id="top-nav" class="row">
+                    <div class="col-3">
+                        <a href="#dummy-top">About</a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#resume">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" class="container-fluid section">
+        <div class="column-center">
+            <div id="intro-header" class="content">
+                <h1>Hello, World!<br>
+                    My name is Lloyd, and I'm a <br>
+                    <b><span id="title" class="fade-in show"></span></b> 
+                </h1>
+            </div>
+            <div id="intro-content" class="content p-content">
+                <p>
+                    I am a Computer Science and Data Science student at the University of Western Australia.
+                    Currently in my second last year of studies, I am looking for opportunities to gain experience in the industry.
+                    I am interested in software development, data analysis, and machine learning.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container-fluid section">
+        <div class="column-center">
+            <div class="content">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="project">
+                            <h3>GetHired.ai</h3>
+                            <h5>Interview Practice Chat-Bot</h5>
+                            <h8>Co-Creator</h8>
+                            <p class="project-description">
+                                GPT powered interview practice chat application that allows users to practice their interview skills with an AI.
+                                Users can enter their desired job title and the AI will generate and ask interview questions related to the job.
+                                Users will be able to get instant feedback on their answers and improve their interview skills.
+                            </p>
+                            <p class="project-tech">
+                                <b>Technologies:</b> HTML, CSS, JavaScript, Python, Flask, OpenAI GPT-3, Jquery, Bootstrap
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="project-carousel">
+                            <div class="carousel-item">
+                                <img src="./images/gethired-1.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-2.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-3.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-4.png" alt="..." />
+                            </div>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button id="prev">&#60;</button>
+                            <button id="next">&#62;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="project-carousel">
+                            <div class="carousel-item">
+                                <img src="./images/gethired-1.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-2.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-3.png" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/gethired-4.png" alt="..." />
+                            </div>
+                        </div>
+                        <div class="carousel-buttons">
+                            <button id="prev">&#60;</button>
+                            <button id="next">&#62;</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project">
+                            <h3> Spotlight forLinux</h3>
+                            <h5>A spotlight-like command-line utility program </h5>
+                            <h8>Co-Creator</h8>
+                            <p class="project-description">
+                                A command-line utility program, named trove, that builds and searches a compressed index of the content of the files in
+                                a user specified directory. Allows the user to search for keywords and pinpoint the location of the files that contain them.
+                            </p>
+                            <p class="project-tech">
+                                <b>Technologies:</b> C, Unix, Makefile, POSIX function calls, System Calls
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project">
+                        <h3>Tigers and Goats</h3>
+                        <h5>Board game to play with others or the computer</h5>
+                        <h8>Co-Creator</h8>
+                        <p class="project-description">
+                            Java implementation of the board game Tigers and Goats. Allows the user to play against another player or against the computer.
+                        </p>
+                        <p class="project-tech">
+                            <b>Technologies:</b> Java
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="project-carousel">
+                        <div class="carousel-item">
+                            <img src="./images/gethired-1.png" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gethired-2.png" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gethired-3.png" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/gethired-4.png" alt="..." />
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button id="prev">&#60;</button>
+                        <button id="next">&#62;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Last but not least, this website was made using HTML, CSS, JavaScript, and Bootstrap.
+        </p>
+
+    </div>
+</body>
+</html>

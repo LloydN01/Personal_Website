@@ -1,0 +1,88 @@
+/*
+div {
+    border: 1px solid;
+}
+*/
+
+/* Add this to the child element's class when you want to center vertically */
+.vertical-center {
+margin: 0;
+position: relative;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+/* 
+Add this to the parent div's class if you want to horizontally center
+the vertically stacked children 
+*/
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Standard CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ededed;
+}
+
+
+.section {
+    margin-bottom: 5em;
+    width: 75%;
+}
+
+#top {
+    background-color: #333;
+    color: #ededed;
+    top: 0;
+    position: fixed;
+}
+
+#top-nav {
+    float: right;
+}
+
+#top-nav a {
+    text-decoration: none;
+    color: #ededed;
+}
+
+#main {
+    margin-top: 5em;
+}
+
+#intro-header {
+    text-align: center;
+    width: 80%;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.project-content {
+    margin-bottom: 5em;
+}
+
+.project {
+    height: 30em;
+}
+
+.carousel-buttons {
+    text-align: center;
+}
+
+.fade-in {
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+opacity: 1;
+}
