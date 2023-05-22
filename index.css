@@ -51,7 +51,7 @@ body {
 
 .section {
     margin-bottom: 5em;
-    width: 75%;
+    width: 80%;
 }
 
 #top {
@@ -134,6 +134,9 @@ opacity: 1;
 
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
+    .section {
+        width: 90%;
+    }
 
     .project-carousel > * {
         max-width: 100%;
