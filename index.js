@@ -55,8 +55,8 @@ window.onload = () => {
 
     // Display the Projects when scrolled to
     window.addEventListener("scroll", () => {
-        let guide = document.getElementById("project-guide");
-
+        let guide = document.getElementById("scroll-guide"); // Get the scroll guide
+        let projectHeader = document.getElementById("project-header"); // Get the projects header
         let first = document.getElementById("project1");
         let firstPos = first.getBoundingClientRect().top;
 
@@ -72,12 +72,26 @@ window.onload = () => {
         if (firstPos < screenPos) {
             guide.classList.add("fade-in");
             first.classList.add("show");
+            projectHeader.classList.add("show");
         }
         if (secondPos < screenPos) {
             second.classList.add("show");
         }
         if (thirdPos < screenPos) {
             third.classList.add("show");
+        }
+
+        let firstJob = document.getElementById("job-content1");
+        let firstJobPos = firstJob.getBoundingClientRect().top;
+
+        let secondJob = document.getElementById("job-content2");
+        let secondJobPos = secondJob.getBoundingClientRect().top;
+
+        if (firstJobPos < screenPos) {
+            firstJob.classList.add("show");
+        }
+        if (secondJobPos < screenPos) {
+            secondJob.classList.add("show");
         }
     });
 
