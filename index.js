@@ -75,6 +75,17 @@ window.onload = () => {
         $("html").css("overflow-y", "auto");
     });
 
+    // Hide the menu when any of the menu links are clicked
+    $("#menu a").click(function () {
+        $("#menu").css("visibility", "hidden");
+        $("#menu a").css("display", "none");
+        $("#overlay").css("display", "none"); // activates overlay
+        
+        // Allows scrolling when menu is closed
+        $("html").css("position", "static");
+        $("html").css("overflow-y", "auto");
+    });
+
     // // Hide the modals when the close button is clicked
     // $(".close-btn").click(function () {
     //     $(".popup").hide();
