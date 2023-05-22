@@ -37,6 +37,17 @@ the vertically stacked children
 }
 */
 
+.fade-in {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 #overlay {
     display: none;
     position: absolute;
@@ -61,6 +72,7 @@ body {
 #top {
     top: 0;
     margin-bottom: 8em;
+    margin-top: 1em;
 }
 
 #top-nav {

@@ -53,6 +53,34 @@ function displayPrevItem(carouselId, carouselIndx, carouselLength){
 window.onload = () => {
     changeTitle(); // Change the job title every 3 seconds
 
+    // Display the Projects when scrolled to
+    window.addEventListener("scroll", () => {
+        let guide = document.getElementById("project-guide");
+
+        let first = document.getElementById("project1");
+        let firstPos = first.getBoundingClientRect().top;
+
+        let second = document.getElementById("project2");
+        let secondPos = second.getBoundingClientRect().top;
+
+        let third = document.getElementById("project3");
+        let thirdPos = third.getBoundingClientRect().top;
+
+        let screenPos = window.innerHeight - 400; // Get the height of the screen
+
+        // Display the projects when scrolled to
+        if (firstPos < screenPos) {
+            guide.classList.add("fade-in");
+            first.classList.add("show");
+        }
+        if (secondPos < screenPos) {
+            second.classList.add("show");
+        }
+        if (thirdPos < screenPos) {
+            third.classList.add("show");
+        }
+    });
+
     // Display the menu when the menu button is clicked
     $("#menu-btn").click(function () {
         $("#menu").css("visibility", "visible");
