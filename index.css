@@ -144,8 +144,4 @@ opacity: 1;
         width: 40px;
         height: 40px;
     }
-
-    video {
-        max-height: 30em;
-    }
 }
