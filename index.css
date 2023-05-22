@@ -96,7 +96,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 15%;
+    height: 10em;
     right: 1em;
     z-index: 9999;
 }
