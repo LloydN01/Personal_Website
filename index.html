@@ -26,17 +26,17 @@
                 <source type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-    </div>
-    <div id="overlay"></div> -->
+        </div> -->
+    <!-- </div> -->
 
+    <div id="overlay"></div>
     <div id="about"></div>
     <div id="top" class="container-fluid">
         <div class="row">
-            <div class="col-3">
+            <div class="col-7">
                 <u><b>Lloyd Na</b></u>
             </div>
-            <div class="col-9">
+            <div class="col-5">
                 <div id="top-nav" class="row">
                     <div class="col-4">
                         <a href="#projects">Projects</a>
@@ -48,7 +48,13 @@
                         <a href="#contact">Contact</a>
                     </div>
                 </div>
+                <button id="menu-btn">&#9776;</button>
             </div>
+        </div>
+        <div id="menu">
+            <a href="#projects">Projects</a>
+            <a href="#resume">Experience</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
@@ -56,9 +62,11 @@
         <div class="row">
             <div id="intro-header" class=" col-md-6">
                 <h1>Hello, World!<br>
-                    My name is Lloyd, and I'm a <br>
-                    <b><span id="title" class="fade-in show"></span></b> 
+                    My name is Lloyd, and I'm a
                 </h1>
+                <div id="title-slidshow">
+                    <h1><b><span id="title"></span></b></h1>
+                </div>
             </div>
             <div id="intro-content" class=" col-md-6">
                 <p>
@@ -73,7 +81,7 @@
     <div id="projects" class="container-fluid section">
         <div class="column-center">
             <div class="content">
-                <h2><b>Projects</b></h2>
+                <h2><u><b>Projects</b></u></h2>
             </div>
             <div class="project-content">
                 <div class="row project-body">
@@ -97,7 +105,7 @@
                     </div>
                     <div class="col-md-7">
                         <div id="project1-carousel" class="project-carousel">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NKSRK7ZsTR0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NKSRK7ZsTR0?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ivmjqKBeae0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/F3HklcJXReY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/0351ANuEWKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -110,13 +118,13 @@
                 <div class="row project-body">
                     <div class="reverse-carousel col-md-7">
                         <div id="project2-carousel" class="project-carousel">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vN1lATWz7d4?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vN1lATWz7d4?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/kv_1715QZ2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="reverse-project col-md-5">
                         <div class="project">
-                            <h3> Spotlight forLinux</h3>
+                            <h3> Spotlight for Linux</h3>
                             <h5>A spotlight-like command-line utility program </h5>
                             <h8>Co-Creator</h8>
                             <p class="project-description">
@@ -162,11 +170,6 @@
                 </div>
             </div>
         </div>
-
-        <p>
-            Last but not least, this website was made using HTML, CSS, JavaScript, and Bootstrap.
-        </p>
-
     </div>
     
 </body>

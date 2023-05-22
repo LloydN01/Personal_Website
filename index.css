@@ -1,5 +1,4 @@
 /*https://coolors.co/696d7d-6f9283-8d9f87-cdc6a5-f0dcca*/
-
 /*
 div {
     border: 1px solid;
@@ -36,6 +35,7 @@ the vertically stacked children
     position: fixed;
     z-index: 9999;
 }
+*/
 
 #overlay {
     display: none;
@@ -46,7 +46,7 @@ the vertically stacked children
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-} */
+}
 
 /* Standard CSS */
 body {
@@ -60,24 +60,50 @@ body {
 
 #top {
     top: 0;
+    margin-bottom: 8em;
 }
 
 #top-nav {
-    float: right;
     text-align: center;
 }
 
-#top-nav a {
+#top-nav a, #menu a {
     text-decoration: none;
     color: black;
 }
 
-#intro-header, #intro-content {
-    margin-bottom: 2em;
+#menu-btn {
+    display: none;
+    float: right;
+}
+
+#menu {
+    visibility: hidden;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15%;
+    right: 1em;
+    z-index: 9999;
+}
+
+#menu > a {
+    display: none;
+    margin: 1em;
 }
 
 #main {
     margin-top: 5em;
+}
+
+#title-slidshow {
+    height: 7em;
+}
+
+#title-slideshow span {
+    font-size: larger;
 }
 
 .content {
@@ -110,6 +136,14 @@ body {
     border-radius: 10px;
 }
 
+.project > h3 {
+    font-weight: bold;
+}
+
+.project > h8 {
+    font-style: italic;
+}
+
 .carousel-buttons {
     display: flex;
     flex-grow: 1;
@@ -125,17 +159,16 @@ body {
     margin: 10px
 }
 
-.fade-in {
-opacity: 0;
-transition: opacity 1s ease-in-out;
-}
-
-.fade-in.show {
-opacity: 1;
-}
-
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    #top-nav {
+        display: none;
+    }
+
     .section {
         width: 95%;
     }

@@ -12,12 +12,21 @@ const titleArray = [
 function changeTitle() {
     let indx = 0;
     const title = document.getElementById("title");
-    title.innerHTML = titleArray[0];
+    for (let i = 0; i < titleArray[0].length; i++){
+        setTimeout(() => {
+            title.innerHTML = titleArray[0].substring(0, i + 1);
+        }, 100 * i);
+    }
 
     function displayNextItem(){
         title.classList.remove("show");
         setTimeout(() => {
-            title.innerHTML = titleArray[++indx % titleArray.length];
+            let newJobTitle = titleArray[++indx % titleArray.length];
+            for (let i = 0; i < newJobTitle.length; i++){
+                setTimeout(() => {
+                    title.innerHTML = newJobTitle.substring(0, i + 1);
+                }, 100 * i);
+            }
             title.classList.add("show");
         }, 1000);
     }
@@ -43,6 +52,28 @@ function displayPrevItem(carouselId, carouselIndx, carouselLength){
 
 window.onload = () => {
     changeTitle(); // Change the job title every 3 seconds
+
+    // Display the menu when the menu button is clicked
+    $("#menu-btn").click(function () {
+        $("#menu").css("visibility", "visible");
+        $("#menu a").css("display", "block");
+        $("#overlay").css("display", "block"); // activates overlay
+
+        // Prevents scrolling when menu is open
+        $("html").css("position", "fixed");
+        $("html").css("overflow-y", "scroll");
+    });
+
+    // Hide the menu when the overlay is clicked
+    $("#overlay").click(function () {
+        $("#menu").css("visibility", "hidden");
+        $("#menu a").css("display", "none");
+        $("#overlay").css("display", "none"); // activates overlay
+
+        // Allows scrolling when menu is closed
+        $("html").css("position", "static");
+        $("html").css("overflow-y", "auto");
+    });
 
     // // Hide the modals when the close button is clicked
     // $(".close-btn").click(function () {
