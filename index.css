@@ -6,6 +6,10 @@ div {
 }
 */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
 /* Add this to the child element's class when you want to center vertically */
 .vertical-center {
 margin: 0;
@@ -46,7 +50,7 @@ the vertically stacked children
 
 /* Standard CSS */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 .section {
@@ -60,6 +64,7 @@ body {
 
 #top-nav {
     float: right;
+    text-align: center;
 }
 
 #top-nav a {
@@ -67,13 +72,12 @@ body {
     color: black;
 }
 
-#main {
-    margin-top: 5em;
+#intro-header, #intro-content {
+    margin-bottom: 2em;
 }
 
-#intro-header {
-    text-align: center;
-    width: 80%;
+#main {
+    margin-top: 5em;
 }
 
 .content {
@@ -102,8 +106,6 @@ body {
 
 .project-carousel > * {
     display: none;
-    max-width: 80%;
-    max-height: 80%;
     border: solid 2px;
     border-radius: 10px;
 }
@@ -135,7 +137,7 @@ opacity: 1;
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
     .section {
-        width: 90%;
+        width: 95%;
     }
 
     .project-carousel > * {
@@ -146,5 +148,13 @@ opacity: 1;
     .carousel-buttons button{
         width: 40px;
         height: 40px;
+    }
+
+    .reverse-carousel {
+        order: 2;
+    }
+
+    .reverse-project {
+        order: 1;
     }
 }
