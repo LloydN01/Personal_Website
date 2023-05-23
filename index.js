@@ -99,6 +99,7 @@ window.onload = () => {
             third.classList.remove("show");
         }
 
+        let experienceHeader = document.getElementById("experience-header");
         let firstJob = document.getElementById("job-content1");
         let firstJobPos = firstJob.getBoundingClientRect().top;
 
@@ -106,8 +107,10 @@ window.onload = () => {
         let secondJobPos = secondJob.getBoundingClientRect().top;
 
         if (firstJobPos < screenPos) {
+            experienceHeader.classList.add("show");
             firstJob.classList.add("show");
         } else {
+            experienceHeader.classList.remove("show");
             firstJob.classList.remove("show");
         }
 
