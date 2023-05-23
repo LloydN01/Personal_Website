@@ -52,6 +52,14 @@ the vertically stacked children
     animation: fade 2s infinite;
 }
 
+#back-to-top {
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 9999;
+}
+
 #overlay {
     display: none;
     position: absolute;
