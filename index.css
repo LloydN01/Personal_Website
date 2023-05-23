@@ -99,7 +99,7 @@ body {
     text-align: center;
 }
 
-#top-nav a, #menu a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -152,10 +152,9 @@ body {
 }
 
 .project-content {
+    border-bottom: solid black 2px;
     margin-bottom: 5em;
-    border: solid 2px;
     padding: 20px;
-    border-radius: 10px;
 }
 
 .project-body > div {
@@ -172,8 +171,6 @@ body {
 
 .project-carousel > * {
     display: none;
-    border: solid 2px;
-    border-radius: 10px;
 }
 
 .project > h3 {
@@ -203,16 +200,19 @@ body {
     text-align: center;
 }
 
-.job-content {
+.job-content{
     margin-bottom: 5em;
-    border: solid 2px;
     padding: 10px;
-    border-radius: 10px;
     margin: 2em auto;
+    border-bottom: solid black 2px;
 }
 
 .job-content ul {
     text-align: left;
+}
+
+#contact .row div {
+    border-bottom: solid black 2px;
 }
 
 /* CSS for when screen width drops below 576px */
@@ -246,6 +246,10 @@ body {
     .reverse-project {
         order: 1;
     }
+}
+
+#contact * {
+    text-align: center;
 }
 
 @keyframes fade {
