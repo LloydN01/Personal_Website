@@ -211,10 +211,6 @@ a {
     text-align: left;
 }
 
-#contact .row {
-    border-bottom: solid black 2px;
-}
-
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
     #menu-btn {
@@ -250,6 +246,11 @@ a {
 
 #contact * {
     text-align: center;
+    margin-bottom: 1em;
+}
+
+#contact h2 {
+    margin-bottom: 3em;
 }
 
 @keyframes fade {
