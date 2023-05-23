@@ -50,6 +50,14 @@ function displayPrevItem(carouselId, carouselIndx, carouselLength){
     return carouselIndx;
 }
 
+window.onscroll = () => {
+    // Progress bar
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 window.onload = () => {
     changeTitle(); // Change the job title every 3 seconds
 
