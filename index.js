@@ -81,12 +81,22 @@ window.onload = () => {
             guide.classList.add("fade-in");
             first.classList.add("show");
             projectHeader.classList.add("show");
+        } else {
+            guide.classList.remove("fade-in");
+            first.classList.remove("show");
+            projectHeader.classList.remove("show"); 
         }
+
         if (secondPos < screenPos) {
             second.classList.add("show");
+        } else {
+            second.classList.remove("show");
         }
+
         if (thirdPos < screenPos) {
             third.classList.add("show");
+        } else {
+            third.classList.remove("show");
         }
 
         let firstJob = document.getElementById("job-content1");
@@ -97,9 +107,14 @@ window.onload = () => {
 
         if (firstJobPos < screenPos) {
             firstJob.classList.add("show");
+        } else {
+            firstJob.classList.remove("show");
         }
+
         if (secondJobPos < screenPos) {
             secondJob.classList.add("show");
+        } else {
+            secondJob.classList.remove("show");
         }
     });
 
