@@ -163,6 +163,10 @@ a {
     font-size: larger;
 }
 
+#typing-animation{
+    animation: typing 0.7s infinite;
+}
+
 .content {
     text-align: center;
     margin-bottom: 2em;
@@ -282,5 +286,14 @@ a {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

@@ -3,12 +3,13 @@ let project2Indx = 0;
 let project3Indx = 0;
 
 const titleArray = [
-    "Software Engineer", "Fullstack Developer",
-    "Data Analyst", "Avid Learner", "Problem Solver",
+    "Software Engineer", "Data Analyst",
+    "Fullstack Developer", "Data Analyst", 
+    "Avid Learner", "Problem Solver",
     "Team Player"
 ];
     
-// Function to change the job title every 3 seconds
+// Function to change the job title every 3.5 seconds
 function changeTitle() {
     let indx = 0;
     const title = document.getElementById("title");
@@ -25,13 +26,13 @@ function changeTitle() {
             for (let i = 0; i < newJobTitle.length; i++){
                 setTimeout(() => {
                     title.innerHTML = newJobTitle.substring(0, i + 1);
-                }, 100 * i);
+                }, 150 * i);
             }
             title.classList.add("show");
         }, 1000);
     }
 
-    setInterval(displayNextItem, 3000);
+    setInterval(displayNextItem, 3500);
 }
 
 // Function to display the next item in the carousel
