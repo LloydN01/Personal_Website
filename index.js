@@ -146,6 +146,15 @@ window.onload = () => {
         } else {
             secondJob.classList.remove("show");
         }
+
+        let transcriptContent = document.getElementById("transcript");
+        let transcriptPos = transcriptContent.getBoundingClientRect().top;
+
+        if (transcriptPos < screenPos) {
+            transcriptContent.classList.add("show");
+        } else {
+            transcriptContent.classList.remove("show");
+        }
     });
 
     // Display the menu when the menu button is clicked

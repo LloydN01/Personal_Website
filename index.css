@@ -1,5 +1,5 @@
 /*https://coolors.co/696d7d-6f9283-8d9f87-cdc6a5-f0dcca*/
-/*
+/*]
 div {
     border: 1px solid;
 }
@@ -257,6 +257,20 @@ a {
     text-align: left;
 }
 
+
+#transcript-content {
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+#transcript-content td {
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}
+
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
     #menu-btn {
@@ -269,7 +283,7 @@ a {
 
     .skill {
         height: 50px;
-        margin: 10px;
+        margin: 15px;
     }
 
     .section {
