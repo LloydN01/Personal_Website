@@ -37,6 +37,10 @@ the vertically stacked children
 }
 */
 
+.bounce {
+    animation: bounce 1.5s;
+}
+
 .fade-in {
     visibility: hidden;
     opacity: 0;
@@ -193,6 +197,10 @@ a {
     padding: 20px;
 }
 
+.project-content:last-child{
+    margin-bottom: 0;
+}
+
 .project-body > div {
     display: flex;
     flex-direction: column;
@@ -314,5 +322,17 @@ a {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

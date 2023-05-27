@@ -51,6 +51,20 @@ function displayPrevItem(carouselId, carouselIndx, carouselLength){
     return carouselIndx;
 }
 
+// Iterate through the skills and bounce them
+function bounceSkills() {
+    let skillItems = document.getElementById("skills-content").children;
+    let skillCounts = skillItems.length;
+    let i = 0;
+    setInterval(function(){
+        skillItems[i % skillCounts].classList.add("bounce");
+        setInterval(function(){
+            skillItems[i % skillCounts].classList.remove("bounce");
+        }, 1000);
+        i++;
+    }, 1000);
+}
+
 window.onscroll = () => {
     // Progress bar
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -61,6 +75,7 @@ window.onscroll = () => {
 
 window.onload = () => {
     changeTitle(); // Change the job title every 3 seconds
+    bounceSkills(); // Bounce the skills
 
     // Display the Projects when scrolled to
     window.addEventListener("scroll", () => {
