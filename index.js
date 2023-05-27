@@ -64,7 +64,21 @@ window.onload = () => {
 
     // Display the Projects when scrolled to
     window.addEventListener("scroll", () => {
+        let screenPos = window.innerHeight - 300; // Get the height of the screen
+
         let guide = document.getElementById("scroll-guide"); // Get the scroll guide
+        let skillContent = document.getElementById("skills"); // Get the skills header
+        let skillPos = skillContent.getBoundingClientRect().top; // Get the position of the skills header
+
+        // Display the skills when scrolled to
+        if (skillPos < screenPos) {
+            guide.classList.add("fade-in");
+            skillContent.classList.add("show");
+        } else {
+            guide.classList.remove("fade-in");
+            skillContent.classList.remove("show");
+        }
+
         let projectHeader = document.getElementById("project-header"); // Get the projects header
         let first = document.getElementById("project1");
         let firstPos = first.getBoundingClientRect().top;
@@ -75,15 +89,11 @@ window.onload = () => {
         let third = document.getElementById("project3");
         let thirdPos = third.getBoundingClientRect().top;
 
-        let screenPos = window.innerHeight - 400; // Get the height of the screen
-
         // Display the projects when scrolled to
         if (firstPos < screenPos) {
-            guide.classList.add("fade-in");
             first.classList.add("show");
             projectHeader.classList.add("show");
         } else {
-            guide.classList.remove("fade-in");
             first.classList.remove("show");
             projectHeader.classList.remove("show"); 
         }
@@ -101,6 +111,7 @@ window.onload = () => {
         }
 
         let experienceHeader = document.getElementById("experience-header");
+
         let firstJob = document.getElementById("job-content1");
         let firstJobPos = firstJob.getBoundingClientRect().top;
 

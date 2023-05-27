@@ -172,6 +172,20 @@ a {
     margin-bottom: 2em;
 }
 
+#skills-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.skill {
+    height: 80px;
+    margin: 15px;
+}
+
 .project-content {
     border: solid black 2px;
     border-radius: 10px;
@@ -243,6 +257,11 @@ a {
 
     #top-nav {
         display: none;
+    }
+
+    .skill {
+        height: 50px;
+        margin: 10px;
     }
 
     .section {
