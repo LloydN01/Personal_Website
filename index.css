@@ -273,6 +273,10 @@ table {
 
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
+    #body {
+        font-size: smaller;
+    }
+
     #menu-btn {
         display: block;
     }
