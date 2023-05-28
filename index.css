@@ -274,7 +274,7 @@ table {
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
     #body {
-        font-size: smaller;
+        font-size: small;
     }
 
     #menu-btn {
