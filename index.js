@@ -286,4 +286,13 @@ window.onload = () => {
     prevBtn3.addEventListener("click", () => {
         project3Indx = displayPrevItem("#project3-carousel", project3Indx, project3Length);
     });
+
+    /////////////////// Transcript Button ///////////////////
+    let transcriptBtn = document.getElementById("transcript-reveal");
+    let transcript = document.getElementById("transcript-content");
+
+    transcriptBtn.addEventListener("click", () => {
+        transcriptBtn.style.display = "none";
+        transcript.style.display = "block";
+    });
 }
