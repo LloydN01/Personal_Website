@@ -267,6 +267,10 @@ a {
     padding: 10px;
 }
 
+#transcript-content th {
+    text-align: center;
+}
+
 table {
     margin: auto;
 }
@@ -310,6 +314,10 @@ table {
 
     .reverse-project {
         order: 1;
+    }
+
+    .project-content, .job-content, #transcript-content {
+        border: none;
     }
 }
 
