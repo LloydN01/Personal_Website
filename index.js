@@ -79,7 +79,7 @@ window.onload = () => {
 
     // Display the Projects when scrolled to
     window.addEventListener("scroll", () => {
-        let screenPos = window.innerHeight - 300; // Get the height of the screen
+        let screenPos = window.innerHeight - 350; // Get the height of the screen
 
         let guide = document.getElementById("scroll-guide"); // Get the scroll guide
         let skillContent = document.getElementById("skills"); // Get the skills header
