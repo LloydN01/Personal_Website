@@ -279,6 +279,11 @@ table {
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* CSS for when screen width drops below 576px */
 @media (max-width: 768px) {
     body {
