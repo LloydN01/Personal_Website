@@ -257,28 +257,6 @@ a {
     text-align: left;
 }
 
-#transcript-reveal {
-    text-align: center;
-}
-
-#transcript-content {
-    border: solid black 2px;
-    border-radius: 10px;
-    display : none;
-}
-
-#transcript-content td {
-    padding: 10px;
-}
-
-#transcript-content th {
-    text-align: center;
-}
-
-table {
-    margin: auto;
-}
-
 img {
     max-width: 100%;
     height: auto;

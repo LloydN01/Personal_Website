@@ -146,15 +146,6 @@ window.onload = () => {
         } else {
             secondJob.classList.remove("show");
         }
-
-        let transcriptContent = document.getElementById("transcript");
-        let transcriptPos = transcriptContent.getBoundingClientRect().top;
-
-        if (transcriptPos < screenPos) {
-            transcriptContent.classList.add("show");
-        } else {
-            transcriptContent.classList.remove("show");
-        }
     });
 
     // Display the menu when the menu button is clicked
@@ -190,26 +181,6 @@ window.onload = () => {
         $("html").css("overflow-y", "auto");
     });
 
-    // // Hide the modals when the close button is clicked
-    // $(".close-btn").click(function () {
-    //     $(".popup").hide();
-    //     $("#overlay").css("display", "none"); // activates overlay
-
-    //     // Allows scrolling when modal is closed
-    //     $("html").css("position", "static");
-    //     $("html").css("overflow-y", "auto");
-    // });
-
-    // // When overlay is clicked, hide the modals
-    // $("#overlay").click(function () {
-    //     $(".popup").hide();
-    //     $("#overlay").css("display", "none"); // activates overlay
-
-    //     // Allows scrolling when modal is closed
-    //     $("html").css("position", "static");
-    //     $("html").css("overflow-y", "auto");
-    // });
-
     /////////////////// Project 1 ///////////////////
 
     // Carousel buttons
@@ -228,26 +199,6 @@ window.onload = () => {
     prevBtn1.addEventListener("click", () => {
         project1Indx = displayPrevItem("#project1-carousel", project1Indx, project1Length);
     });
-
-    // // Display the video modal when video is clicked
-    // $("#project1-carousel").click(function () {
-    //     let videoElement = $('.video-container');
-    //     let sourceElement = $('<source>');
-    //     let currVideo1 = $("#project1-carousel").children().eq(project1Indx);
-    //     console.log(project1Indx);
-    //     sourceElement.attr('src', currVideo1.children().eq(0).attr("src"));
-    //     sourceElement.attr('type', 'video/mp4');
-    //     videoElement.append(sourceElement);
-
-    //     $("#video-modal").fadeIn(600);
-    //     $("#overlay").fadeIn(600);
-    //     $("#video-modal").show();
-    //     $("#overlay").css("display", "block"); // activates overlay
-        
-    //     // Prevents scrolling when modal is open
-    //     $("html").css("position", "fixed");
-    //     $("html").css("overflow-y", "scroll");
-    // });    
 
     /////////////////// Project 2 ///////////////////
 
@@ -285,14 +236,5 @@ window.onload = () => {
     // EventListener for previous button
     prevBtn3.addEventListener("click", () => {
         project3Indx = displayPrevItem("#project3-carousel", project3Indx, project3Length);
-    });
-
-    /////////////////// Transcript Button ///////////////////
-    let transcriptBtn = document.getElementById("transcript-reveal");
-    let transcript = document.getElementById("transcript-content");
-
-    transcriptBtn.addEventListener("click", () => {
-        transcriptBtn.style.display = "none";
-        transcript.style.display = "block";
     });
 }
