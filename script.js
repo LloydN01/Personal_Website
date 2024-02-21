@@ -3,8 +3,8 @@ let project2Indx = 0;
 let project3Indx = 0;
 
 const titleArray = [
-    "Software Engineer", "Data Analyst",
-    "Fullstack Developer", "Data Analyst", 
+    "Software Developer", "Data Analyst",
+    "Full-Stack Developer", "Technology Consultant", 
     "Avid Learner", "Problem Solver",
     "Team Player"
 ];
