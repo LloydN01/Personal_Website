@@ -1,335 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lloyd Na</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./images/favicon_io/favicon.ico"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lloyd Na</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+        <!-- Latest compiled and minified CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./script.js"></script>
 
-    <script src="./script.js"></script>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
 
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
-    
-    <div id="overlay"></div>
-    <div id="back-to-top">
-        <a href="#top"><i class="fa fa-chevron-up"></i></a>
-    </div>
-    <div id="about"></div>
-
-    <div id="top" class="container-fluid">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+    <body>
+        <div id="overlay"></div>
+        <div id="back-to-top">
+            <a href="#top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <div class="row">
-            <div class="col-7">
-                <u><b>Lloyd Na</b></u>
+        <div id="about"></div>
+
+        <div id="top" class="container-fluid">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
             </div>
-            <div class="col-5">
-                <div id="top-nav" class="row">
-                    <div class="col-4">
-                        <a href="#projects">Project</a>
-                    </div>
-                    <div class="col-4">
-                        <a href="#resume">Experience</a>
-                    </div>
-                    <div class="col-4">
-                        <a href="#contact">Contact</a>
-                    </div>
+            <div class="row">
+                <div class="col-7">
+                    <u><b>Lloyd Na</b></u>
                 </div>
-                <button id="menu-btn" class="highlight">&#9776;</button>
-            </div>
-        </div>
-        <div id="menu">
-            <a href="#projects">Projects</a>
-            <a href="#resume">Experience</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-
-    <div id="main" class="container-fluid section">
-        <div class="row">
-            <div id="intro-header" class=" col-md-6">
-                <h1>Hello, World!<br>
-                    My name is <b>Lloyd</b>, and I'm a...
-                </h1>
-                <div id="title-slidshow">
-                    <h1><b><span id="title" class="highlight"></span><span id="typing-animation">|</span></b></h1>
+                <div class="col-5">
+                    <div id="top-nav" class="row">
+                        <div class="col-4">
+                            <a href="#projects">Project</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#resume">Experience</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <button id="menu-btn" class="highlight">&#9776;</button>
                 </div>
             </div>
-            <div id="intro-content" class=" col-md-6">
-                <p>
-                    A <i class="underline">Computer Science</i> and <i class="underline">Data Science</i> student at the
-                    University of Western
-                    Australia.<br><br>
-                    Currently in my last year of studies and looking for opportunities to gain experience in the
-                    industry.
-                    I am interested in <i class="underline">software development</i>, <i class="underline">data
-                        analysis</i>, and <i class="underline">machine learning</i>.
-                </p>
+            <div id="menu">
+                <a href="#projects">Projects</a>
+                <a href="#resume">Experience</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-    </div>
 
-    <div id="scroll-guide">
-        <h4 class="fade-in-out">Scroll Down To Reveal</h4>
-    </div>
-
-    <div id="skills" class="container-fluid section fade-in">
-        <div class="content">
-            <h2><b class="underline">Skills</b></h2>
-        </div>
-        <div id="skills-content">
-            <img class="skill" src="./images/logos/Python-logo-notext.svg.png" alt="Python">
-            <img class="skill" src="./images/logos/java-logo-1.png" alt="Java">
-            <img class="skill" src="./images/logos/C_Logo.png" alt="C">
-            <img class="skill" src="./images/logos/Sql_data_base_with_logo.png" alt="SQL">
-            <img class="skill" src="./images/logos/R_logo.svg.png" alt="R">
-            <img class="skill" src="./images/logos/Microsoft-Power-BI-Symbol.png" alt="PowerBI">
-            <img class="skill" src="./images/logos/HTML5_Logo_512.png" alt="HTML5">
-            <img class="skill" src="./images/logos/javascript-39394.png" alt="JavaScript">
-            <img class="skill" src="./images/logos/CSS3_logo_and_wordmark.svg.png" alt="CSS3">
-        </div>
-    </div>
-
-    <div id="projects" class="container-fluid section">
-        <div class="column-center">
-            <div id="project-header" class="content fade-in">
-                <h2><b class="underline">Projects</b></h2>
-                <br>
-                <p><i>This website was built by me using HTML, CSS, JavaScript, Jquery, and Bootstrap</i></p>
-            </div>
-            <div id="project1" class="project-content fade-in">
-                <div class="row project-body">
-                    <div class="col-md-5">
-                        <div class="project">
-                            <h3><span>GetHired.ai</span></h3>
-                            <h5>Interview Practice Chat-Bot</h5>
-                            <h8>Co-Creator</h8>
-                            <p class="project-description">
-                                GPT powered interview practice chat application that allows users to practice their
-                                interview skills with an AI bot.
-                                Users can enter their desired job title and the bot will generate and ask interview
-                                questions related to the job.
-                                Users will be able to get instant feedback on their answers and improve their interview
-                                skills.
-                            </p>
-                            <p class="project-tech">
-                                <b>Technologies:</b> HTML, CSS, JavaScript, Python, Flask, OpenAI GPT-3.5, Jquery,
-                                Bootstrap
-                        </div>
-                        <div class="carousel-buttons">
-                            <button id="prev1" class="highlight">&#60;</button>
-                            <button id="next1" class="highlight">&#62;</button>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div id="project1-carousel" class="project-carousel">
-                            <img src="https://i.ibb.co/TLQm3Qg/Chat-Bot-GIF.gif" alt="Chat-Bot-GIF" border="0">
-                            <img src="https://i.ibb.co/MPHS3hX/chat-demo.gif" alt="chat-demo" border="0">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/NKSRK7ZsTR0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ivmjqKBeae0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F3HklcJXReY"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0351ANuEWKk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
+        <div id="main" class="container-fluid section">
+            <div class="row">
+                <div id="intro-header" class="col-md-6">
+                    <h1>
+                        Hello, World!<br />
+                        My name is <b>Lloyd</b>, and I'm a...
+                    </h1>
+                    <div id="title-slidshow">
+                        <h1>
+                            <b
+                                ><span id="title" class="highlight"></span
+                                ><span id="typing-animation">|</span></b
+                            >
+                        </h1>
                     </div>
                 </div>
-            </div>
-
-            <div id="project2" class="project-content fade-in">
-                <div class="row project-body">
-                    <div class="reverse-carousel col-md-7">
-                        <div id="project2-carousel" class="project-carousel">
-                            <img src="https://i.ibb.co/wd4X5Nd/Trove-Demo-GIF.gif" alt="Trove-Demo-GIF" border="0">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/vN1lATWz7d4"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kv_1715QZ2I"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="reverse-project col-md-5">
-                        <div class="project">
-                            <h3><span>Spotlight for Linux</span></h3>
-                            <h5>A spotlight-like command-line utility program </h5>
-                            <h8>Co-Creator</h8>
-                            <p class="project-description">
-                                A command-line utility program, named trove, that builds and searches a compressed index
-                                of the content of the files in
-                                a user specified directory. Allows the user to search for keywords and pinpoint the
-                                location of the files that contain them.
-                            </p>
-                            <p class="project-tech">
-                                <b>Technologies:</b> C, Unix, Makefile, POSIX function calls, System Calls
-                        </div>
-                        <div class="carousel-buttons">
-                            <button id="prev2" class="highlight">&#60;</button>
-                            <button id="next2" class="highlight">&#62;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project3" class="project-content fade-in">
-                <div class="row project-body">
-                    <div class="col-md-5">
-                        <div class="project">
-                            <h3><span>Tigers and Goats</span></h3>
-                            <h5>Board game to play with others or the computer</h5>
-                            <h8>Co-Creator</h8>
-                            <p class="project-description">
-                                Java implementation of the board game Tigers and Goats. Allows the user to play against
-                                another player or against the computer.
-                            </p>
-                            <p class="project-tech">
-                                <b>Technologies:</b> Java
-                        </div>
-                        <div class="carousel-buttons">
-                            <button id="prev3" class="highlight">&#60;</button>
-                            <button id="next3" class="highlight">&#62;</button>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div id="project3-carousel" class="project-carousel">
-                            <img src="https://i.ibb.co/mtC3v8d/Tigers-And-Goats-GIF.gif" alt="Tigers-And-Goats-GIF" border="0">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SXx-TvRfMh0"
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; 
-                                encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen></iframe>
-                            <img width="315" src="./images/tigers_and_goats_1.png" alt="tigers and goats">
-                            <img width="315" src="./images/tigers_and_goats_2.png" alt="tigers and goats">
-                            <img width="315" src="./images/tigers_and_goats_3.png" alt="tigers and goats">
-                        </div>
-                    </div>
+                <div id="intro-content" class="col-md-6">
+                    <p>
+                        A <i class="underline">Computer Science</i> and
+                        <i class="underline">Data Science</i> student at the
+                        University of Western Australia.<br /><br />
+                        Currently in my last year of studies and looking for
+                        opportunities to gain experience in the industry. I am
+                        interested in
+                        <i class="underline">software development</i>,
+                        <i class="underline">data analysis</i>, and
+                        <i class="underline">machine learning</i>.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="resume" class="container-fluid section">
-        <div class="column-center">
-            <div id="experience-header" class="content fade-in">
-                <h2 class="underline"><b>Experiences</b></h2>
-            </div>
+        <div id="scroll-guide">
+            <h4 class="fade-in-out">Scroll Down To Reveal</h4>
+        </div>
 
-            <div id="job-content1" class="row jobs fade-in">
-                <div class="col-md-5 job-content">
-                    <h3><b>Visagio</b></h3>
-                    <h5>Software Developer Consultant</h5>
-                    <ul>
-                        <li>
-                            Implemented Angular (Web Framework) and TypeScript to create dynamic and responsive user interfaces, 
-                            ensuring a seamless and engaging user experience
-                        </li>
-                        <li>
-                            Leveraged FastAPI, Pandas, and NumPy for back-end development, specializing in efficient data 
-                            processing and manipulation, contributing to the creation of a robust and scalable web application
-                        </li>
-                        <li>
-                            Led development of a streamlined staff training needs analysis application, overseeing the design and 
-                            implementation of the UI/UX and custom database
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-5 job-content">
-                    <h3><b>Pacific Energy Group</b></h3>
-                    <h5>Data Science Vacation Student</h5>
-                    <ul>
-                        <li>Analysed and extracted crucial emissions data from raw dataset for ESG reporting to
-                            stakeholders</li>
-                        <li>Displayed superb data analysis ability by determining trends in talent recruitment and OSH
-                            data</li>
-                        <li>Further developed Microsoft Excel skills by frequently utilising VBA, formula functions, and
-                            pivot tables</li>
-                    </ul>
-                </div>
+        <div id="skills" class="container-fluid section fade-in">
+            <div class="content">
+                <h2><b class="underline">Skills</b></h2>
             </div>
-            <div id="job-content2" class="row jobs fade-in">
-                <div class="col-md-5 job-content">
-                    <h3><b>UWA Data Science Club</b></h3>
-                    <h5>Undergraduate Student Representative</h5>
-                    <ul>
-                        <li>Communicated with fellow undergraduate students to provide opportunities and events based on
-                            students' needs</li>
-                        <li>Took part in running successful networking events, workshops, and study nights</li>
-                        <li>Acted as club representative at various industry events to network and spread club's purpose
-                        </li>
-                    </ul>
+            <div id="skills-content">
+                <img
+                    class="skill"
+                    src="./images/logos/Python-logo-notext.svg.png"
+                    alt="Python"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/java-logo-1.png"
+                    alt="Java"
+                />
+                <img class="skill" src="./images/logos/C_Logo.png" alt="C" />
+                <img
+                    class="skill"
+                    src="./images/logos/Sql_data_base_with_logo.png"
+                    alt="SQL"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/R_logo.svg.png"
+                    alt="R"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/Microsoft-Power-BI-Symbol.png"
+                    alt="PowerBI"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/HTML5_Logo_512.png"
+                    alt="HTML5"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/javascript-39394.png"
+                    alt="JavaScript"
+                />
+                <img
+                    class="skill"
+                    src="./images/logos/CSS3_logo_and_wordmark.svg.png"
+                    alt="CSS3"
+                />
+            </div>
+        </div>
+
+        <div id="projects" class="container-fluid section">
+            <div class="column-center">
+                <div id="project-header" class="content fade-in">
+                    <h2><b class="underline">Projects</b></h2>
+                    <br />
+                    <p>
+                        <i
+                            >This website was built by me using HTML, CSS,
+                            JavaScript, Jquery, and Bootstrap</i
+                        >
+                    </p>
                 </div>
-                <div class="col-md-5 job-content">
-                    <h3><b>UWA Robotics Club</b></h3>
-                    <h5>Sub-Committee Member</h5>
-                    <ul>
-                        <li>Worked under committee members to organise popular events and projects</li>
-                        <li>Created marketing material for club events</li>
-                    </ul>
+                <div id="project1" class="project-content fade-in">
+                    <div class="row project-body">
+                        <div class="col-md-5">
+                            <div class="project">
+                                <h3><span>GetHired.ai</span></h3>
+                                <h5>Interview Practice Chat-Bot</h5>
+                                <h8>Co-Creator</h8>
+                                <p class="project-description">
+                                    GPT powered interview practice chat
+                                    application that allows users to practice
+                                    their interview skills with an AI bot. Users
+                                    can enter their desired job title and the
+                                    bot will generate and ask interview
+                                    questions related to the job. Users will be
+                                    able to get instant feedback on their
+                                    answers and improve their interview skills.
+                                </p>
+                                <p class="project-tech">
+                                    <b>Technologies:</b> HTML, CSS, JavaScript,
+                                    Python, Flask, OpenAI GPT-3.5, Jquery,
+                                    Bootstrap
+                                </p>
+                            </div>
+
+                            <div class="carousel-buttons">
+                                <button id="prev1" class="highlight">
+                                    &#60;
+                                </button>
+                                <button id="next1" class="highlight">
+                                    &#62;
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div
+                                id="project1-carousel"
+                                class="project-carousel"
+                            >
+                                <img
+                                    src="https://i.ibb.co/TLQm3Qg/Chat-Bot-GIF.gif"
+                                    alt="Chat-Bot-GIF"
+                                    border="0"
+                                />
+                                <img
+                                    src="https://i.ibb.co/MPHS3hX/chat-demo.gif"
+                                    alt="chat-demo"
+                                    border="0"
+                                />
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/NKSRK7ZsTR0"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/ivmjqKBeae0"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/F3HklcJXReY"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/0351ANuEWKk"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="project2" class="project-content fade-in">
+                    <div class="row project-body">
+                        <div class="reverse-carousel col-md-7">
+                            <div
+                                id="project2-carousel"
+                                class="project-carousel"
+                            >
+                                <img
+                                    src="https://i.ibb.co/rmNbVZx/Summarise-AI-Demo-Made-with-Clipchamp.gif"
+                                    alt="SummariseAI-Demo-GIF"
+                                    border="0"
+                                />
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/CtGkt3FdrsQ?si=KH34eemRIXXA65Fi"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="reverse-project col-md-5">
+                            <div class="project">
+                                <h3><span>Summarise AI</span></h3>
+                                <h5>
+                                    A browser extension that summarises user
+                                    selected text on any webpage
+                                </h5>
+                                <h8>Creator</h8>
+                                <p class="project-description">
+                                    A browser extension that leverages
+                                    NLPCloud's API to summarise user selected
+                                    text on any webpage. It applies DOM
+                                    manipulation to extract the selected text
+                                    and sends it to the API for summarisation.
+                                    The summarised text is then displayed to the
+                                    user. Enabled customization by integrating
+                                    the functionality to choose from different
+                                    NLP models for text summarization
+                                </p>
+                                <p class="project-tech">
+                                    <b>Technologies:</b> HTML, CSS, JavaScript,
+                                    API Integration, NLP, DOM Manipulation
+                                </p>
+                            </div>
+
+                            <div class="carousel-buttons">
+                                <button id="prev2" class="highlight">
+                                    &#60;
+                                </button>
+                                <button id="next2" class="highlight">
+                                    &#62;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="project3" class="project-content fade-in">
+                    <div class="row project-body">
+                        <div class="col-md-5">
+                            <div class="project">
+                                <h3><span>Spotlight for Linux</span></h3>
+                                <h5>
+                                    A spotlight-like command-line utility
+                                    program
+                                </h5>
+                                <h8>Co-Creator</h8>
+                                <p class="project-description">
+                                    A command-line utility program, named trove,
+                                    that builds and searches a compressed index
+                                    of the content of the files in a user
+                                    specified directory. Allows the user to
+                                    search for keywords and pinpoint the
+                                    location of the files that contain them.
+                                </p>
+                                <p class="project-tech">
+                                    <b>Technologies:</b> C, Unix, Makefile,
+                                    POSIX function calls, System Calls
+                                </p>
+                            </div>
+
+                            <div class="carousel-buttons">
+                                <button id="prev3" class="highlight">
+                                    &#60;
+                                </button>
+                                <button id="next3" class="highlight">
+                                    &#62;
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div
+                                id="project3-carousel"
+                                class="project-carousel"
+                            >
+                                <img
+                                    src="https://i.ibb.co/wd4X5Nd/Trove-Demo-GIF.gif"
+                                    alt="Trove-Demo-GIF"
+                                    border="0"
+                                />
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/vN1lATWz7d4"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/kv_1715QZ2I"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="contact" class="container-fluid section">
-        <div class="content">
-            <h2><b class="underline">Contact Me</b></h2>
+        <div id="resume" class="container-fluid section">
+            <div class="column-center">
+                <div id="experience-header" class="content fade-in">
+                    <h2 class="underline"><b>Experiences</b></h2>
+                </div>
+
+                <div id="job-content1" class="row jobs fade-in">
+                    <div class="col-md-5 job-content">
+                        <h3><b>Visagio</b></h3>
+                        <h5>Software Developer Consultant</h5>
+                        <ul>
+                            <li>
+                                Implemented Angular (Web Framework) and
+                                TypeScript to create dynamic and responsive user
+                                interfaces, ensuring a seamless and engaging
+                                user experience
+                            </li>
+                            <li>
+                                Leveraged FastAPI, Pandas, and NumPy for
+                                back-end development, specializing in efficient
+                                data processing and manipulation, contributing
+                                to the creation of a robust and scalable web
+                                application
+                            </li>
+                            <li>
+                                Led development of a streamlined staff training
+                                needs analysis application, overseeing the
+                                design and implementation of the UI/UX and
+                                custom database
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 job-content">
+                        <h3><b>Pacific Energy Group</b></h3>
+                        <h5>Data Science Vacation Student</h5>
+                        <ul>
+                            <li>
+                                Analysed and extracted crucial emissions data
+                                from raw dataset for ESG reporting to
+                                stakeholders
+                            </li>
+                            <li>
+                                Displayed superb data analysis ability by
+                                determining trends in talent recruitment and OSH
+                                data
+                            </li>
+                            <li>
+                                Further developed Microsoft Excel skills by
+                                frequently utilising VBA, formula functions, and
+                                pivot tables
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="job-content2" class="row jobs fade-in">
+                    <div class="col-md-5 job-content">
+                        <h3><b>UWA Data Science Club</b></h3>
+                        <h5>Undergraduate Student Representative</h5>
+                        <ul>
+                            <li>
+                                Communicated with fellow undergraduate students
+                                to provide opportunities and events based on
+                                students' needs
+                            </li>
+                            <li>
+                                Took part in running successful networking
+                                events, workshops, and study nights
+                            </li>
+                            <li>
+                                Acted as club representative at various industry
+                                events to network and spread club's purpose
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 job-content">
+                        <h3><b>UWA Robotics Club</b></h3>
+                        <h5>Sub-Committee Member</h5>
+                        <ul>
+                            <li>
+                                Worked under committee members to organise
+                                popular events and projects
+                            </li>
+                            <li>Created marketing material for club events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h5><b>Email</b></h5>
-                <p>
-                    <i style="font-size:24px" class="fa fa-envelope"></i>
-                    lloydna0527@gmail.com
-                </p>
+
+        <div id="contact" class="container-fluid section">
+            <div class="content">
+                <h2><b class="underline">Contact Me</b></h2>
             </div>
-            <div class="col-md-4">
-                <h5><b>LinkedIn</b></h5>
-                <a href="https://www.linkedin.com/in/lloyd-na/">
-                    <i style="font-size:24px" class="fa fa-linkedin-square"></i>
-                    linkedin.com/in/lloyd-na/
-                </a>
-            </div>
-            <div class="col-md-4">
-                <h5><b>GitHub</b></h5>
-                <a href="https://github.com/LloydN01">
-                    <i style="font-size:24px" class="fa fa-github"></i>
-                    github.com/LloydN01
-                </a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><b>Email</b></h5>
+                    <p>
+                        <i style="font-size: 24px" class="fa fa-envelope"></i>
+                        lloydna0527@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5><b>LinkedIn</b></h5>
+                    <a href="https://www.linkedin.com/in/lloyd-na/">
+                        <i
+                            style="font-size: 24px"
+                            class="fa fa-linkedin-square"
+                        ></i>
+                        linkedin.com/in/lloyd-na/
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h5><b>GitHub</b></h5>
+                    <a href="https://github.com/LloydN01">
+                        <i style="font-size: 24px" class="fa fa-github"></i>
+                        github.com/LloydN01
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-
-</body>
-
+    </body>
 </html>
