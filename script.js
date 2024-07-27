@@ -1,29 +1,44 @@
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector("#loading-icon").style.display = "flex";
+        document.querySelector("#loading-background").style.display = "block";
+        document.body.classList.add("no-scroll"); // Disable scroll
+    } else {
+        document.querySelector("#loading-icon").style.display = "none";
+        document.querySelector("#loading-background").style.display = "none";
+        document.body.classList.remove("no-scroll"); // Enable scroll
+    }
+};
+
 let project1Indx = 0;
 let project2Indx = 0;
 let project3Indx = 0;
 
 const titleArray = [
-    "Software Developer", "Data Analyst",
-    "Full-Stack Developer", "Technology Consultant", 
-    "Avid Learner", "Problem Solver",
-    "Team Player"
+    "Software Developer",
+    "Data Analyst",
+    "Full-Stack Developer",
+    "Technology Consultant",
+    "Avid Learner",
+    "Problem Solver",
+    "Team Player",
 ];
-    
+
 // Function to change the job title every 3.5 seconds
 function changeTitle() {
     let indx = 0;
     const title = document.getElementById("title");
-    for (let i = 0; i < titleArray[0].length; i++){
+    for (let i = 0; i < titleArray[0].length; i++) {
         setTimeout(() => {
             title.innerHTML = titleArray[0].substring(0, i + 1);
         }, 100 * i);
     }
 
-    function displayNextItem(){
+    function displayNextItem() {
         title.classList.remove("show");
         setTimeout(() => {
             let newJobTitle = titleArray[++indx % titleArray.length];
-            for (let i = 0; i < newJobTitle.length; i++){
+            for (let i = 0; i < newJobTitle.length; i++) {
                 setTimeout(() => {
                     title.innerHTML = newJobTitle.substring(0, i + 1);
                 }, 150 * i);
@@ -36,7 +51,7 @@ function changeTitle() {
 }
 
 // Function to display the next item in the carousel
-function displayNextItem(carouselId, carouselIndx, carouselLength){
+function displayNextItem(carouselId, carouselIndx, carouselLength) {
     $(carouselId).children().eq(carouselIndx).css("display", "none"); // Hide current video
     carouselIndx = (carouselIndx + 1) % carouselLength; // Increment index
     $(carouselId).children().eq(carouselIndx).fadeIn(1000); // Display next item
@@ -44,7 +59,7 @@ function displayNextItem(carouselId, carouselIndx, carouselLength){
 }
 
 // Function to display the previous item in the carousel
-function displayPrevItem(carouselId, carouselIndx, carouselLength){
+function displayPrevItem(carouselId, carouselIndx, carouselLength) {
     $(carouselId).children().eq(carouselIndx).css("display", "none"); // Hide current video
     carouselIndx = (carouselIndx - 1 + carouselLength) % carouselLength; // Decrement index
     $(carouselId).children().eq(carouselIndx).fadeIn(1000); // Display previous item
@@ -56,9 +71,9 @@ function bounceSkills() {
     let skillItems = document.getElementById("skills-content").children;
     let skillCounts = skillItems.length;
     let i = 0;
-    setInterval(function(){
+    setInterval(function () {
         skillItems[i % skillCounts].classList.add("bounce");
-        setInterval(function(){
+        setInterval(function () {
             skillItems[i % skillCounts].classList.remove("bounce");
         }, 1000);
         i++;
@@ -67,11 +82,14 @@ function bounceSkills() {
 
 window.onscroll = () => {
     // Progress bar
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    let height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
-}
+};
 
 window.onload = () => {
     changeTitle(); // Change the job title every 3 seconds
@@ -110,7 +128,7 @@ window.onload = () => {
             projectHeader.classList.add("show");
         } else {
             first.classList.remove("show");
-            projectHeader.classList.remove("show"); 
+            projectHeader.classList.remove("show");
         }
 
         if (secondPos < screenPos) {
@@ -175,7 +193,7 @@ window.onload = () => {
         $("#menu").css("visibility", "hidden");
         $("#menu a").css("display", "none");
         $("#overlay").css("display", "none"); // activates overlay
-        
+
         // Allows scrolling when menu is closed
         $("html").css("position", "static");
         $("html").css("overflow-y", "auto");
@@ -192,12 +210,20 @@ window.onload = () => {
 
     // EventListener for next button
     nextBtn1.addEventListener("click", () => {
-        project1Indx = displayNextItem("#project1-carousel", project1Indx, project1Length);
+        project1Indx = displayNextItem(
+            "#project1-carousel",
+            project1Indx,
+            project1Length
+        );
     });
 
     // EventListener for previous button
     prevBtn1.addEventListener("click", () => {
-        project1Indx = displayPrevItem("#project1-carousel", project1Indx, project1Length);
+        project1Indx = displayPrevItem(
+            "#project1-carousel",
+            project1Indx,
+            project1Length
+        );
     });
 
     /////////////////// Project 2 ///////////////////
@@ -205,18 +231,26 @@ window.onload = () => {
     // Carousel buttons
     let prevBtn2 = document.getElementById("prev2");
     let nextBtn2 = document.getElementById("next2");
-  
+
     $("#project2-carousel").children().eq(0).css("display", "block"); // Display first image
     let project2Length = $("#project2-carousel").children().length; // Get number of images
 
     // EventListener for next button
     nextBtn2.addEventListener("click", () => {
-        project2Indx = displayNextItem("#project2-carousel", project2Indx, project2Length);
+        project2Indx = displayNextItem(
+            "#project2-carousel",
+            project2Indx,
+            project2Length
+        );
     });
 
     // EventListener for previous button
     prevBtn2.addEventListener("click", () => {
-        project2Indx = displayPrevItem("#project2-carousel", project2Indx, project2Length);
+        project2Indx = displayPrevItem(
+            "#project2-carousel",
+            project2Indx,
+            project2Length
+        );
     });
 
     /////////////////// Project 3 ///////////////////
@@ -230,11 +264,19 @@ window.onload = () => {
 
     // EventListener for next button
     nextBtn3.addEventListener("click", () => {
-        project3Indx = displayNextItem("#project3-carousel", project3Indx, project3Length);
+        project3Indx = displayNextItem(
+            "#project3-carousel",
+            project3Indx,
+            project3Length
+        );
     });
 
     // EventListener for previous button
     prevBtn3.addEventListener("click", () => {
-        project3Indx = displayPrevItem("#project3-carousel", project3Indx, project3Length);
+        project3Indx = displayPrevItem(
+            "#project3-carousel",
+            project3Indx,
+            project3Length
+        );
     });
-}
+};
